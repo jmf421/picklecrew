@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f4f4f8; padding: 16px; }
+.grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.group { display: flex; flex-direction: column; gap: 4px; }
+.swatch-main { height: 56px; border-radius: 8px 8px 0 0; display: flex; align-items: flex-end; padding: 6px 8px; }
+.swatch-light { height: 32px; border-radius: 0 0 8px 8px; display: flex; align-items: center; padding: 4px 8px; }
+.name { font-size: 10px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+.hex { font-size: 9px; opacity: 0.7; }
+</style>
+</head><body>
+<div class="grid">
+  <div class="group">
+    <div class="swatch-main" style="background:#22a05e"><div><div class="name" style="color:#fff">Success</div><div class="hex" style="color:#fff">#22a05e</div></div></div>
+    <div class="swatch-light" style="background:#d1f5e3"><div class="hex" style="color:#1a7a4a">#d1f5e3</div></div>
+  </div>
+  <div class="group">
+    <div class="swatch-main" style="background:#f0a000"><div><div class="name" style="color:#fff">Warning</div><div class="hex" style="color:#fff">#f0a000</div></div></div>
+    <div class="swatch-light" style="background:#fef3d0"><div class="hex" style="color:#c47a00">#fef3d0</div></div>
+  </div>
+  <div class="group">
+    <div class="swatch-main" style="background:#e03a3a"><div><div class="name" style="color:#fff">Danger</div><div class="hex" style="color:#fff">#e03a3a</div></div></div>
+    <div class="swatch-light" style="background:#fde8e8"><div class="hex" style="color:#b52e2e">#fde8e8</div></div>
+  </div>
+  <div class="group">
+    <div class="swatch-main" style="background:#f55a20"><div><div class="name" style="color:#fff">Fire 🔥</div><div class="hex" style="color:#fff">#f55a20</div></div></div>
+    <div class="swatch-light" style="background:#fde8dc"><div class="hex" style="color:#c04010">#fde8dc</div></div>
+  </div>
+  <div class="group">
+    <div class="swatch-main" style="background:#f0c040"><div><div class="name" style="color:#333">Gold 🏆</div><div class="hex" style="color:#333">#f0c040</div></div></div>
+    <div class="swatch-light" style="background:#fef7d8"><div class="hex" style="color:#9a7000">#fef7d8</div></div>
+  </div>
+</div>
+</body></html>

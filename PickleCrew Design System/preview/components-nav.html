@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f4f4f8; padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+.label { font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7e7e8e; margin-bottom: 6px; }
+
+/* App Bar */
+.app-bar { height: 56px; background: #204160; display: flex; align-items: center; padding: 0 16px; gap: 12px; border-radius: 12px; }
+.app-bar-title { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: 0.02em; flex: 1; }
+.icon-btn { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; cursor: pointer; }
+.icon-btn:hover { background: rgba(255,255,255,0.12); }
+.notif-dot { width: 8px; height: 8px; background: #f55a20; border-radius: 50%; position: absolute; top: 2px; right: 2px; }
+
+/* Bottom Nav */
+.bottom-nav { background: #fff; border: 1px solid #e4e4ec; border-radius: 16px; display: flex; box-shadow: 0 -4px 12px rgba(32,65,96,.08); overflow: hidden; }
+.nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 10px 0 12px; cursor: pointer; position: relative; transition: background 0.15s; }
+.nav-item.active { color: #2090d0; }
+.nav-item.active::after { content: ''; position: absolute; top: 0; left: 25%; right: 25%; height: 2px; background: #2090d0; border-radius: 0 0 2px 2px; }
+.nav-item:not(.active) { color: #a4a4b4; }
+.nav-label { font-size: 10px; font-weight: 600; letter-spacing: 0.02em; }
+.nav-fab { position: relative; margin-top: -20px; }
+.fab { width: 52px; height: 52px; border-radius: 50%; background: #2090d0; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(32,144,208,0.5); color: #fff; }
+
+/* Dark app bar variant */
+.app-bar-dark { height: 56px; background: #0d1b29; border: 1px solid #162d47; display: flex; align-items: center; padding: 0 16px; gap: 12px; border-radius: 12px; }
+</style>
+</head><body>
+<div>
+  <div class="label">App Bar — Light</div>
+  <div class="app-bar">
+    <div class="icon-btn" style="position:relative">
+      <i data-lucide="chevron-left" style="width:20px;height:20px"></i>
+    </div>
+    <div class="app-bar-title">Game Log</div>
+    <div class="icon-btn" style="position:relative">
+      <i data-lucide="bell" style="width:20px;height:20px"></i>
+      <div class="notif-dot"></div>
+    </div>
+    <div class="icon-btn">
+      <i data-lucide="more-vertical" style="width:20px;height:20px"></i>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="label">Bottom Navigation (5-tab)</div>
+  <div class="bottom-nav">
+    <div class="nav-item active">
+      <i data-lucide="home" style="width:22px;height:22px"></i>
+      <span class="nav-label">Home</span>
+    </div>
+    <div class="nav-item">
+      <i data-lucide="users" style="width:22px;height:22px"></i>
+      <span class="nav-label">Groups</span>
+    </div>
+    <div class="nav-item nav-fab">
+      <div class="fab"><i data-lucide="plus" style="width:24px;height:24px"></i></div>
+      <span class="nav-label" style="margin-top:4px;color:#2090d0">Log</span>
+    </div>
+    <div class="nav-item">
+      <i data-lucide="calendar" style="width:22px;height:22px"></i>
+      <span class="nav-label">Events</span>
+    </div>
+    <div class="nav-item">
+      <i data-lucide="user" style="width:22px;height:22px"></i>
+      <span class="nav-label">Profile</span>
+    </div>
+  </div>
+</div>
+<script>lucide.createIcons();</script>
+</body></html>

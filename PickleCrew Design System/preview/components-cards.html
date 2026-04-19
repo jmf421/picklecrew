@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f4f4f8; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.card { background: #fff; border-radius: 12px; border: 1px solid #e4e4ec; box-shadow: 0 4px 12px rgba(32,65,96,.10); overflow: hidden; }
+.label { font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7e7e8e; margin-bottom: 6px; }
+.row { display: flex; gap: 10px; }
+/* Game result card */
+.game-card { padding: 14px 16px; }
+.game-meta { font-size: 11px; font-weight: 500; color: #7e7e8e; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 8px; display: flex; justify-content: space-between; }
+.teams { display: flex; align-items: center; gap: 10px; }
+.team { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.player-row { display: flex; align-items: center; gap: 6px; }
+.avatar { width: 24px; height: 24px; border-radius: 50%; background: #93b5cf; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 700; color: #204160; }
+.player-name { font-size: 13px; font-weight: 500; color: #204160; }
+.score-col { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.score { font-family: 'Barlow Condensed', sans-serif; font-size: 40px; font-weight: 900; line-height: 1; }
+.score.win { color: #204160; }
+.score.lose { color: #93b5cf; }
+.divider { font-size: 20px; font-weight: 700; color: #c8c8d4; }
+/* Player card */
+.player-card { padding: 14px 16px; display: flex; align-items: center; gap: 12px; }
+.avatar-lg { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #204160, #2090d0); display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: #fff; flex-shrink: 0; }
+.player-info { flex: 1; }
+.player-info h4 { font-size: 15px; font-weight: 600; color: #204160; }
+.player-info p { font-size: 12px; color: #7e7e8e; margin-top: 2px; }
+.stat-chips { display: flex; gap: 6px; margin-top: 6px; }
+.chip { background: #e8f1f8; color: #204160; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 9999px; }
+.chip.blue { background: #e8f5fd; color: #1a88d8; }
+.elo-badge { font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 900; color: #204160; display: flex; flex-direction: column; align-items: center; }
+.elo-badge span { font-size: 9px; font-weight: 600; color: #7e7e8e; letter-spacing: 0.08em; text-transform: uppercase; }
+</style>
+</head><body>
+<div class="label">Game Result Card</div>
+<div class="card">
+  <div class="game-card">
+    <div class="game-meta"><span>Doubles · Sat Apr 19</span><span style="color:#22a05e; font-weight:700">WIN</span></div>
+    <div class="teams">
+      <div class="team">
+        <div class="player-row"><div class="avatar">AJ</div><span class="player-name">Alex J.</span></div>
+        <div class="player-row"><div class="avatar" style="background:#c4d8e8">MR</div><span class="player-name">Mike R.</span></div>
+      </div>
+      <div class="score-col">
+        <div style="display:flex; gap:8px; align-items:center">
+          <span class="score win">11</span>
+          <span class="divider">–</span>
+          <span class="score lose">7</span>
+        </div>
+        <div style="font-size:9px; font-weight:600; color:#a4a4b4; letter-spacing:0.08em; text-transform:uppercase">Final</div>
+      </div>
+      <div class="team" style="align-items:flex-end">
+        <div class="player-row"><span class="player-name">Sam T.</span><div class="avatar" style="background:#e8f1f8">ST</div></div>
+        <div class="player-row"><span class="player-name">Dana K.</span><div class="avatar" style="background:#ceeaf9">DK</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="label">Player Card</div>
+<div class="card">
+  <div class="player-card">
+    <div class="avatar-lg">AJ</div>
+    <div class="player-info">
+      <h4>Alex Johnson</h4>
+      <p>Skill 3.5 · Power Hitter</p>
+      <div class="stat-chips">
+        <span class="chip">14W / 4L</span>
+        <span class="chip blue">67% Win Rate</span>
+      </div>
+    </div>
+    <div class="elo-badge">1247 <span>ELO ↑</span></div>
+  </div>
+</div>
+</body></html>

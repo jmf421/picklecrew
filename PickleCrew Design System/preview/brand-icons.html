@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f4f4f8; padding: 16px; }
+.label { font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7e7e8e; margin-bottom: 10px; }
+.icon-grid { display: grid; grid-template-columns: repeat(auto-fill, 56px); gap: 8px; margin-bottom: 14px; }
+.icon-cell { width: 56px; height: 56px; background: #fff; border: 1px solid #e4e4ec; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; }
+.icon-cell i { color: #204160; }
+.icon-cell.accent i { color: #2090d0; }
+.icon-cell.fire i { color: #f55a20; }
+.icon-cell.gold i { color: #f0c040; }
+.icon-name { font-size: 8px; color: #a4a4b4; font-weight: 500; text-align: center; }
+</style>
+</head><body>
+<div class="label">Core Icons — Lucide (2px stroke)</div>
+<div class="icon-grid">
+  <div class="icon-cell"><i data-lucide="home" style="width:22px;height:22px"></i><span class="icon-name">home</span></div>
+  <div class="icon-cell"><i data-lucide="users" style="width:22px;height:22px"></i><span class="icon-name">users</span></div>
+  <div class="icon-cell accent"><i data-lucide="plus-circle" style="width:22px;height:22px"></i><span class="icon-name">log game</span></div>
+  <div class="icon-cell"><i data-lucide="calendar" style="width:22px;height:22px"></i><span class="icon-name">events</span></div>
+  <div class="icon-cell"><i data-lucide="user" style="width:22px;height:22px"></i><span class="icon-name">profile</span></div>
+  <div class="icon-cell"><i data-lucide="trophy" style="width:22px;height:22px"></i><span class="icon-name">trophy</span></div>
+  <div class="icon-cell"><i data-lucide="bar-chart-2" style="width:22px;height:22px"></i><span class="icon-name">analytics</span></div>
+  <div class="icon-cell fire"><i data-lucide="flame" style="width:22px;height:22px"></i><span class="icon-name">streak</span></div>
+  <div class="icon-cell gold"><i data-lucide="star" style="width:22px;height:22px"></i><span class="icon-name">badge</span></div>
+  <div class="icon-cell"><i data-lucide="bell" style="width:22px;height:22px"></i><span class="icon-name">notify</span></div>
+  <div class="icon-cell"><i data-lucide="map-pin" style="width:22px;height:22px"></i><span class="icon-name">location</span></div>
+  <div class="icon-cell"><i data-lucide="activity" style="width:22px;height:22px"></i><span class="icon-name">activity</span></div>
+  <div class="icon-cell accent"><i data-lucide="zap" style="width:22px;height:22px"></i><span class="icon-name">challenge</span></div>
+  <div class="icon-cell"><i data-lucide="shield" style="width:22px;height:22px"></i><span class="icon-name">defend</span></div>
+  <div class="icon-cell"><i data-lucide="award" style="width:22px;height:22px"></i><span class="icon-name">award</span></div>
+  <div class="icon-cell"><i data-lucide="target" style="width:22px;height:22px"></i><span class="icon-name">target</span></div>
+  <div class="icon-cell"><i data-lucide="message-circle" style="width:22px;height:22px"></i><span class="icon-name">chat</span></div>
+  <div class="icon-cell"><i data-lucide="search" style="width:22px;height:22px"></i><span class="icon-name">search</span></div>
+  <div class="icon-cell"><i data-lucide="settings" style="width:22px;height:22px"></i><span class="icon-name">settings</span></div>
+  <div class="icon-cell"><i data-lucide="share-2" style="width:22px;height:22px"></i><span class="icon-name">share</span></div>
+</div>
+<div class="label">Sizes</div>
+<div style="display:flex; align-items:center; gap:12px; padding:8px 0">
+  <i data-lucide="trophy" style="width:16px;height:16px;color:#204160"></i>
+  <span style="font-size:9px;color:#a4a4b4">16px inline</span>
+  <i data-lucide="trophy" style="width:20px;height:20px;color:#204160"></i>
+  <span style="font-size:9px;color:#a4a4b4">20px standard</span>
+  <i data-lucide="trophy" style="width:24px;height:24px;color:#204160"></i>
+  <span style="font-size:9px;color:#a4a4b4">24px nav/action</span>
+</div>
+<script>lucide.createIcons();</script>
+</body></html>

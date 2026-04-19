@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f4f4f8; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.label { font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7e7e8e; margin-bottom: 4px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 0 18px; height: 44px; border-radius: 9999px; font-size: 14px; font-weight: 600; letter-spacing: 0.01em; cursor: pointer; border: none; }
+.btn-sm { height: 34px; padding: 0 14px; font-size: 12px; border-radius: 9999px; }
+.btn-lg { height: 52px; padding: 0 28px; font-size: 16px; border-radius: 9999px; font-weight: 700; }
+.btn-primary { background: #204160; color: #fff; }
+.btn-accent  { background: #2090d0; color: #fff; }
+.btn-ghost   { background: transparent; color: #204160; border: 1.5px solid #204160; }
+.btn-ghost-blue { background: transparent; color: #2090d0; border: 1.5px solid #2090d0; }
+.btn-danger  { background: #e03a3a; color: #fff; }
+.btn-success { background: #22a05e; color: #fff; }
+.btn-disabled{ background: #c8c8d4; color: #7e7e8e; cursor: not-allowed; }
+.dark-row    { background: #0d1b29; border-radius: 10px; padding: 12px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.btn-dark-ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.3); }
+.btn-dark-accent { background: #2090d0; color: #fff; }
+</style>
+</head><body>
+<div class="label">Size variants — Primary</div>
+<div class="row">
+  <button class="btn btn-sm btn-primary">Small</button>
+  <button class="btn btn-primary">Default</button>
+  <button class="btn btn-lg btn-primary">Large</button>
+</div>
+
+<div class="label">Color variants</div>
+<div class="row">
+  <button class="btn btn-primary">Navy Primary</button>
+  <button class="btn btn-accent">Blue Accent</button>
+  <button class="btn btn-ghost">Ghost Navy</button>
+  <button class="btn btn-ghost-blue">Ghost Blue</button>
+  <button class="btn btn-success">Success</button>
+  <button class="btn btn-danger">Danger</button>
+  <button class="btn btn-disabled" disabled>Disabled</button>
+</div>
+
+<div class="label">On dark background</div>
+<div class="dark-row">
+  <button class="btn btn-dark-accent">Log Game</button>
+  <button class="btn btn-dark-ghost">View Stats</button>
+  <button class="btn btn-primary">Join Crew</button>
+</div>
+
+<div class="label">Icon buttons</div>
+<div class="row">
+  <button class="btn btn-accent" style="width:44px; padding:0; border-radius:50%">+</button>
+  <button class="btn btn-primary" style="gap:8px">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7-7 7 7"/></svg>
+    Challenge
+  </button>
+  <button class="btn btn-ghost" style="gap:8px">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    Find Players
+  </button>
+</div>
+</body></html>

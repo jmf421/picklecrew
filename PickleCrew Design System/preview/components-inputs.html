@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f4f4f8; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.label { font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7e7e8e; margin-bottom: 4px; }
+.field-group { display: flex; flex-direction: column; gap: 4px; }
+.field-label { font-size: 12px; font-weight: 600; color: #204160; }
+.input { height: 44px; border: 1.5px solid #c8c8d4; border-radius: 10px; padding: 0 14px; font-size: 14px; font-family: 'Inter', sans-serif; color: #204160; background: #fff; width: 100%; outline: none; }
+.input:focus { border-color: #2090d0; box-shadow: 0 0 0 3px rgba(32,144,208,0.15); }
+.input-error { border-color: #e03a3a; }
+.helper { font-size: 11px; color: #7e7e8e; margin-top: 2px; }
+.helper.error { color: #e03a3a; }
+.score-stepper { display: flex; align-items: center; gap: 0; border: 1.5px solid #c8c8d4; border-radius: 10px; overflow: hidden; background: #fff; width: fit-content; }
+.step-btn { width: 44px; height: 52px; border: none; background: #f4f4f8; font-size: 22px; font-weight: 600; color: #204160; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.step-val { width: 64px; height: 52px; display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-size: 32px; font-weight: 900; color: #204160; }
+.select { height: 44px; border: 1.5px solid #c8c8d4; border-radius: 10px; padding: 0 14px; font-size: 14px; font-family: 'Inter', sans-serif; color: #204160; background: #fff; width: 100%; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap" rel="stylesheet">
+</head><body>
+<div class="label">Form Inputs</div>
+<div class="field-group">
+  <label class="field-label">Player Name</label>
+  <input class="input" type="text" placeholder="Search players…" />
+  <span class="helper">Type a name or select from your crew</span>
+</div>
+<div class="field-group">
+  <label class="field-label">Group</label>
+  <select class="select">
+    <option>Saturday Smashers</option>
+    <option>Tuesday Evening Crew</option>
+  </select>
+</div>
+<div class="field-group">
+  <label class="field-label">Email</label>
+  <input class="input input-error" type="email" value="badformat" />
+  <span class="helper error">Please enter a valid email address</span>
+</div>
+
+<div class="label" style="margin-top:4px">Score Stepper</div>
+<div style="display:flex; gap:24px; align-items:center">
+  <div>
+    <div class="helper" style="font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#7e7e8e; margin-bottom:6px">Team A</div>
+    <div class="score-stepper">
+      <button class="step-btn">−</button>
+      <div class="step-val">11</div>
+      <button class="step-btn">+</button>
+    </div>
+  </div>
+  <div style="font-size:24px; font-weight:700; color:#c8c8d4; margin-top:18px">–</div>
+  <div>
+    <div class="helper" style="font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#7e7e8e; margin-bottom:6px">Team B</div>
+    <div class="score-stepper">
+      <button class="step-btn">−</button>
+      <div class="step-val">7</div>
+      <button class="step-btn">+</button>
+    </div>
+  </div>
+</div>
+</body></html>

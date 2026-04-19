@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f4f4f8; padding: 16px; }
+.label { font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7e7e8e; margin-bottom: 8px; }
+.grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.badge { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.badge-icon { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; position: relative; }
+.badge-icon::after { content: ''; position: absolute; inset: -2px; border-radius: 50%; border: 2px solid; opacity: 0.5; }
+.badge-name { font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #5e5e6e; text-align: center; max-width: 64px; }
+.badge-gold .badge-icon { background: linear-gradient(135deg, #f0c040, #f0a000); }
+.badge-gold .badge-icon::after { border-color: #f0c040; }
+.badge-blue .badge-icon { background: linear-gradient(135deg, #2090d0, #1163a3); }
+.badge-blue .badge-icon::after { border-color: #2090d0; }
+.badge-navy .badge-icon { background: linear-gradient(135deg, #204160, #0d1b29); }
+.badge-navy .badge-icon::after { border-color: #204160; }
+.badge-fire .badge-icon { background: linear-gradient(135deg, #f55a20, #c04010); }
+.badge-fire .badge-icon::after { border-color: #f55a20; }
+.badge-green .badge-icon { background: linear-gradient(135deg, #22a05e, #1a7a4a); }
+.badge-green .badge-icon::after { border-color: #22a05e; }
+/* Chips/Tags */
+.tags-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.tag { display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 9999px; font-size: 11px; font-weight: 600; }
+</style>
+</head><body>
+<div class="label">Achievement Badges</div>
+<div class="grid">
+  <div class="badge badge-gold">
+    <div class="badge-icon">🏆</div>
+    <div class="badge-name">Golden Pickle</div>
+  </div>
+  <div class="badge badge-fire">
+    <div class="badge-icon">🔥</div>
+    <div class="badge-name">5-Game Streak</div>
+  </div>
+  <div class="badge badge-blue">
+    <div class="badge-icon">🎯</div>
+    <div class="badge-name">Ernie King</div>
+  </div>
+  <div class="badge badge-navy">
+    <div class="badge-icon">🛡️</div>
+    <div class="badge-name">Iron Dinker</div>
+  </div>
+  <div class="badge badge-green">
+    <div class="badge-icon">💪</div>
+    <div class="badge-name">10 Wins</div>
+  </div>
+  <div class="badge badge-gold">
+    <div class="badge-icon">⚡</div>
+    <div class="badge-name">ATP Artist</div>
+  </div>
+</div>
+
+<div class="label">Play Style Tags</div>
+<div class="tags-row">
+  <span class="tag" style="background:#e8f1f8; color:#204160">Dinker</span>
+  <span class="tag" style="background:#fde8dc; color:#c04010">Power Hitter</span>
+  <span class="tag" style="background:#d1f5e3; color:#1a7a4a">Defensive Specialist</span>
+  <span class="tag" style="background:#e8f5fd; color:#1163a3">Social First</span>
+  <span class="tag" style="background:#fef7d8; color:#9a7000">Competitive Edge</span>
+</div>
+
+<div class="label">Status Chips</div>
+<div class="tags-row">
+  <span class="tag" style="background:#d1f5e3; color:#1a7a4a">● Win</span>
+  <span class="tag" style="background:#fde8e8; color:#b52e2e">● Loss</span>
+  <span class="tag" style="background:#e8f1f8; color:#204160">ELO 1247 ↑</span>
+  <span class="tag" style="background:#fef7d8; color:#9a7000">🔥 Streak x5</span>
+  <span class="tag" style="background:#204160; color:#fff">● Looking for Game</span>
+  <span class="tag" style="background:#e03a3a; color:#fff">Filling Up!</span>
+</div>
+</body></html>

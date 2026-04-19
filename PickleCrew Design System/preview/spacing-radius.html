@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f4f4f8; padding: 16px; }
+.section { margin-bottom: 14px; }
+.label { font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7e7e8e; margin-bottom: 8px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+.radius-box { background: #204160; display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; }
+.radius-label { font-size: 9px; font-weight: 600; color: #5e5e6e; margin-top: 4px; text-align: center; }
+.shadow-box { background: #fff; width: 72px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 8px; }
+.shadow-label { font-size: 9px; font-weight: 600; color: #5e5e6e; margin-top: 4px; text-align: center; }
+.item { display: flex; flex-direction: column; align-items: center; }
+</style>
+</head><body>
+<div class="section">
+  <div class="label">Border Radius</div>
+  <div class="row">
+    <div class="item"><div class="radius-box" style="border-radius:4px"></div><div class="radius-label">sm · 4px</div></div>
+    <div class="item"><div class="radius-box" style="border-radius:8px"></div><div class="radius-label">md · 8px</div></div>
+    <div class="item"><div class="radius-box" style="border-radius:12px"></div><div class="radius-label">lg · 12px</div></div>
+    <div class="item"><div class="radius-box" style="border-radius:16px"></div><div class="radius-label">xl · 16px</div></div>
+    <div class="item"><div class="radius-box" style="border-radius:24px"></div><div class="radius-label">2xl · 24px</div></div>
+    <div class="item"><div class="radius-box" style="border-radius:9999px; width:80px; height:36px"></div><div class="radius-label">full · pill</div></div>
+  </div>
+</div>
+<div class="section">
+  <div class="label">Shadows</div>
+  <div class="row">
+    <div class="item"><div class="shadow-box" style="box-shadow:0 1px 3px rgba(32,65,96,.10),0 1px 2px rgba(32,65,96,.06)"></div><div class="shadow-label">sm</div></div>
+    <div class="item"><div class="shadow-box" style="box-shadow:0 4px 12px rgba(32,65,96,.12),0 2px 4px rgba(32,65,96,.08)"></div><div class="shadow-label">md</div></div>
+    <div class="item"><div class="shadow-box" style="box-shadow:0 8px 24px rgba(32,65,96,.16),0 4px 8px rgba(32,65,96,.10)"></div><div class="shadow-label">lg</div></div>
+    <div class="item"><div class="shadow-box" style="box-shadow:0 16px 48px rgba(32,65,96,.20),0 8px 16px rgba(32,65,96,.12)"></div><div class="shadow-label">xl</div></div>
+    <div class="item"><div class="shadow-box" style="background:#0d1b29; box-shadow:0 4px 12px rgba(0,0,0,.40)"></div><div class="shadow-label">dark md</div></div>
+  </div>
+</div>
+</body></html>
